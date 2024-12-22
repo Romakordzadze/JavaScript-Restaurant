@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bruh1{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    margin: 0;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #848384;
+}
+.nuts123{
+    display: flex;
+    gap: 10px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+.blabla{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px 30px;
+    position: absolute;
+    top: 2px;
+    z-index: 999;
+}
+header img{
+    filter: blur(3px);
+    width: 100%;
+    height: 400px;
+    z-index: 900;
+    object-fit: cover;
+}
+header{
+    position: relative;
+    width: 100%;
+    /* background-image: url(https://media.istockphoto.com/id/1191080960/photo/traditional-turkish-breakfast-and-people-taking-various-food-wide-composition.jpg?s=612x612&w=0&k=20&c=PP5ejMisEwzcLWrNmJ8iPPm_u-4P6rOWHEDpBPL2n7Q=);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+    /* display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px 30px; */
+}
+.icon-cart{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#nameSearch{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px 10px rgb(112, 109, 109);
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.title{
+    font-size: xx-large;
+}
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px rgba(0, 0, 0, 0.6));
+}
+.listProduct{
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.listProduct .item{
+    background-color: #EEEEE6;
+    box-shadow: 0 0 10px 10px rgb(53, 180, 174);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #eee;
+}
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+.secondcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.categories{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size:23px;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 25px;
+}
+.menu ul li a{
+    color: black;
+    font-family: "Caveat", cursive;
+    text-decoration: none;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid black;
+    width: 250px;
+    height: 350px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    box-shadow: 0 0 15px 15px rgb(49, 201, 69);
+}
+.filter1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 20px;
+}
+.spiciness{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+}
+#range{
+    width: 190px;
+}
+.nuts{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 17px;
+}
+.nonuts input{
+    width: 20px;
+    height: 18px;
+}
+.vegeterian input{
+    width: 20px;
+    height: 18px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(207, 21, 21);
+    color: azure;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+}
+.fill{
+    display: flex;
+    gap: 40px;
+}
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .fill{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .listProduct{
+        width: 300px;
+    }
+    .fill{
+        flex-direction: column;
+        align-items: center;
+    }
+}

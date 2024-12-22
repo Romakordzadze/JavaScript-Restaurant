@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tac+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body class="">
+    <div class="container">
+        <header>
+            <img src="https://media.istockphoto.com/id/1191080960/photo/traditional-turkish-breakfast-and-people-taking-various-food-wide-composition.jpg?s=612x612&w=0&k=20&c=PP5ejMisEwzcLWrNmJ8iPPm_u-4P6rOWHEDpBPL2n7Q=" alt="">
+            <div class="blabla">
+            <div class="title">PRODUCT LIST</div>
+            <!-- <input id="nameSearch" type="text" placeholder="Search by name"> -->
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
+            </div>
+        </div>
+        </header>
+        <div class="secondcontainer">
+            <div class="categories">
+                <h1>Categories</h1>
+            </div>
+            <div class="menu">
+                <ul class="uli">
+                    <li><a href="">All</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fill">
+            <div class="filter">
+                <div class="filter1">
+                    <p>Filter</p>
+                    <p><i class="fa-solid fa-filter"></i></p>
+                </div>
+                <div class="spiciness">
+                    <p>Spiciness:Not Chosen</p>
+                    <input type="range" name="range" id="range" min="-1" max="4" value="-1" ng-model="spicinessCount" class="ng-pristine ng-valid ng-not-empty ng-valid-min ng-valid-max ng-touched">
+                </div>
+                <div class="nuts">
+                    <div class="nonuts">
+                    <input type="checkbox" id="nutsBox">
+                    <label for="">No Nuts</label>
+                </div>
+                    <div class="vegeterian">
+                        <input type="checkbox">
+                    <label for="">Vegeterian Only</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button>RESET</button>
+                    <button>APPLY FILTER</button>
+                </div>
+            </div>
+            <div class="listProduct">
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button id="procesed" class="checkOut">Check Out</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
