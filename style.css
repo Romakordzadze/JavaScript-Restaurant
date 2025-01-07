@@ -224,6 +224,7 @@ body.showCart .container{
     flex-wrap: wrap;
     list-style: none;
     gap: 25px;
+    cursor: pointer;
 }
 .menu ul li a{
     color: black;
@@ -233,6 +234,7 @@ body.showCart .container{
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
+    cursor: pointer;
 }
 .filter{
     display: flex;
